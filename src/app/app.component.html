@@ -43,6 +43,9 @@
         <a href="https://wa.me/00966534832008" class="whatsapp" target="_blank"
           ><i class="bi bi-whatsapp"></i
         ></a>
+        <a href="tel:00966534832008" class="phone" target="_blank"
+          ><i class="bi bi-phone"></i
+        ></a>
       </div>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -82,7 +85,11 @@
         <div class="row gy-4 justify-content-center">
           <div class="col-xl-3 col-lg-4 col-md-6" *ngFor="let image of images">
             <div class="gallery-item h-100">
-              <img src="{{ image }}" class="img-fluid" alt="" />
+              <img
+                src="{{ image }}"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+              />
               <div
                 class="gallery-links d-flex align-items-center justify-content-center"
               >
