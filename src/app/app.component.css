@@ -1,0 +1,28 @@
+.img-container img {
+  height: 70vh;
+}
+.hero {
+  padding: 95px 0 0 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.nav li a {
+  font-size: 60px;
+  font-weight: 900;
+  direction: rtl;
+  text-align: right;
+}
+.btn_txt {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+header {
+  box-shadow: 0 0 15px rgba(212, 206, 206, 0.1);
+}
+
+@media (max-width: 991px) {
+  .img-container img {
+    height: 50vh;
+  }
+}
