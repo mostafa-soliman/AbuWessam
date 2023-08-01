@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'AbuWessam';
   images: string[] = [];
+  displayedImages: string[] = [];
+  imagesPerLoad = 8;
 
   constructor() {}
 
@@ -15,6 +17,7 @@ export class AppComponent implements OnInit {
     this.images = this.generateGalleryLinks(57).concat(
       this.generateGalleryHLinks(40)
     );
+    this.loadMoreImages();
   }
 
   generateGalleryLinks(count: number): string[] {
@@ -27,5 +30,16 @@ export class AppComponent implements OnInit {
     return Array.from(Array(count).keys()).map(
       (i) => `../assets/img/galleryH(${i + 1}).jpeg`
     );
+  }
+  loadMoreImages() {
+    const startIndex = this.displayedImages.length;
+    const endIndex = startIndex + this.imagesPerLoad;
+    this.displayedImages = this.images.slice(0, endIndex);
+    if (endIndex >= this.images.length) {
+      const moreButton = document.getElementById('moreButton');
+      if (moreButton) {
+        moreButton.style.display = 'none';
+      }
+    }
   }
 }

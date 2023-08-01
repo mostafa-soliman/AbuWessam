@@ -120,7 +120,7 @@
             class="d-block w-100 img-fluid"
             alt="Slide 1"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block bgtxt">
             <h3>تصميمات جبسون بورد تضفي الجمال والأناقة على منزلك</h3>
           </div>
         </div>
@@ -130,7 +130,7 @@
             class="d-block w-100 img-fluid"
             alt="Slide 2"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block bgtxt">
             <h3>لمسة فنية لتحويل منزلك إلى قصر أحلامك</h3>
           </div>
         </div>
@@ -140,7 +140,7 @@
             class="d-block w-100 img-fluid"
             alt="Slide 3"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block bgtxt">
             <h3>استمتع بجمال الأشكال الفنية والديكورات المميزة</h3>
           </div>
         </div>
@@ -150,7 +150,7 @@
             class="d-block w-100 img-fluid"
             alt="Slide 4"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block bgtxt">
             <h3>دمج الجبسون بورد في ديكور منزلك لإطلالة راقية ومتألقة</h3>
           </div>
         </div>
@@ -160,7 +160,7 @@
             class="d-block w-100 img-fluid"
             alt="Slide 5"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block bgtxt">
             <h3>تصميمات جبسون بورد تضفي الجمال والأناقة على منزلك</h3>
           </div>
         </div>
@@ -171,7 +171,7 @@
             class="d-block w-100 img-fluid"
             alt="Slide 1"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block bgtxt">
             <h3>
               استعد للانغماس في عالم الفخامة والأناقة مع أبو وسام للجبسون بورد
             </h3>
@@ -183,7 +183,7 @@
             class="d-block w-100 img-fluid"
             alt="Slide 7"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block bgtxt">
             <h3>
               الحرفية العالية تلتقي بالجمال الفائق. اختر أبو وسام للجبسون بورد
             </h3>
@@ -195,7 +195,7 @@
             class="d-block w-100 img-fluid"
             alt="Slide 8"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block bgtxt">
             <h3>
               قم بتحسين مساحتك التجارية مع أبو وسام للجبسون بورد. ابهر عملائك
               بتصاميم داخلية متقنة.
@@ -214,7 +214,10 @@
     <section id="gallery" class="gallery">
       <div class="container-fluid">
         <div class="row gy-4 justify-content-center">
-          <div class="col-xl-3 col-lg-4 col-md-6" *ngFor="let image of images">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            *ngFor="let image of displayedImages"
+          >
             <div class="gallery-item h-100">
               <img
                 src="{{ image }}"
@@ -237,6 +240,15 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button
+          id="moreButton"
+          (click)="loadMoreImages()"
+          class="btn mt-3 mb-3 btn_txt"
+        >
+          ...المزيد
+        </button>
       </div>
     </section>
 

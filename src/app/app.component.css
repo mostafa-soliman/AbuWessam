@@ -19,6 +19,9 @@
   font-size: 40px;
   font-weight: 900;
 }
+#moreButton {
+  background-color: #27a776;
+}
 h2 {
   font-weight: 900;
   font-size: 60px;
@@ -30,6 +33,9 @@ h3 {
   font-weight: 700;
   color: #27a776;
 }
+.bgtxt {
+  background-color: rgba(212, 206, 206, 0.6);
+}
 header {
   box-shadow: 0 0 15px rgba(212, 206, 206, 0.1);
   padding: 10px 0;
@@ -37,6 +43,10 @@ header {
 
 .sliders img {
   height: 90vh;
+}
+.gallery-item img {
+  object-fit: cover;
+  height: 300px; /* ارتفاع الصورة الثابت */
 }
 
 @media (max-width: 991px) {
