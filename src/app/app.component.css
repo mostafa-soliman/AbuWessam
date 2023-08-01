@@ -6,23 +6,46 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.nav li a {
-  font-size: 60px;
-  font-weight: 900;
+.nav,
+.hammed {
   direction: rtl;
   text-align: right;
+}
+.nav li a {
+  font-size: 30px;
+  font-weight: 900;
 }
 .btn_txt {
   font-size: 40px;
   font-weight: 900;
 }
+h2 {
+  font-weight: 900;
+  font-size: 60px;
+  border-bottom: thin solid #27a776;
+}
 
+h3 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #27a776;
+}
 header {
   box-shadow: 0 0 15px rgba(212, 206, 206, 0.1);
+  padding: 10px 0;
+}
+
+.sliders img {
+  height: 90vh;
 }
 
 @media (max-width: 991px) {
   .img-container img {
     height: 50vh;
+  }
+
+  .nav li a {
+    font-size: 60px;
+    font-weight: 900;
   }
 }
