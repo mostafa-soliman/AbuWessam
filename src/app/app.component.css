@@ -48,7 +48,8 @@ header {
     font-size: 60px;
     font-weight: 900;
   }
-  h2 {
+  h2 span {
     font-size: 70%;
+    display: block;
   }
 }
