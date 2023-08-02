@@ -13,10 +13,42 @@
 
       <nav id="navbar" class="navbar">
         <ul class="nav">
-          <li><a href="#hero" class="active">الرئيسية</a></li>
-          <li><a href="#about">من نحن</a></li>
-          <li><a href="#gallery">المعرض</a></li>
-          <li><a href="#concestUs">تواصل معنا</a></li>
+          <li>
+            <a
+              href="#hero"
+              routerLinkActive="active"
+              aria-current="page"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >الرئيسية</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              routerLinkActive="active"
+              aria-current="page"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >من نحن</a
+            >
+          </li>
+          <li>
+            <a
+              href="#gallery"
+              routerLinkActive="active"
+              aria-current="page"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >المعرض</a
+            >
+          </li>
+          <li>
+            <a
+              href="#concestUs"
+              routerLinkActive="active"
+              aria-current="page"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >تواصل معنا</a
+            >
+          </li>
         </ul>
       </nav>
       <!-- .navbar -->
@@ -164,7 +196,6 @@
             <h3>تصميمات جبسون بورد تضفي الجمال والأناقة على منزلك</h3>
           </div>
         </div>
-
         <div class="carousel-item active">
           <img
             src="../assets/img/slider/galleryslider(6).JPG"
@@ -198,7 +229,7 @@
           <div class="carousel-caption d-md-block bgtxt">
             <h3>
               قم بتحسين مساحتك التجارية مع أبو وسام للجبسون بورد. ابهر عملائك
-              بتصاميم داخلية متقنة.
+              بتصاميم داخلية متقنة
             </h3>
           </div>
         </div>
